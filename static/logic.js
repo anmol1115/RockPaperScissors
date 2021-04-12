@@ -86,7 +86,7 @@ function main() {
                 'user': userScore_span.innerHTML,
                 'comp': compScore_span.innerHTML
             }
-            $.post('http://127.0.0.1:5000/logout', JSON.stringify(scores))
+            $.post('/logout', JSON.stringify(scores))
         })
     }
 }
