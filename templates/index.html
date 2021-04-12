@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block tittle %} Home {% endblock %}
+
+{% block body %}
+<div id="container">
+    <div id="scoreDiv">
+        {% if user == None %}
+        <span id="playerTag" class="tag">User</span>
+        {% else %}
+        <span id="playerTag" class="tag">{{user}}</span>
+        {% endif %}
+        <span id="userScore" class="score">{{user_score}}</span>
+        <span>-</span>
+        <span id="compScore" class="score">{{comp_score}}</span>
+        <span id="compTag" class="tag">Comp</span>
+    </div>
+    <div id="imageDiv">
+        <img id="rock" class="imageBorder image" src="{{url_for('static', filename='rock.png')}}">
+        <img id="paper" class="imageBorder image" src="{{url_for('static', filename='paper.png')}}">
+        <img id="scissors" class="imageBorder image" src="{{url_for('static', filename='scissors.png')}}">
+    </div>
+    <div id="choiceDiv" class="infotxt">Choose Either</div>
+    <div id="result" class="infotxt">Up for a Challange?</div>
+</div>
+<script src="{{url_for('static', filename='jquery-3.6.0.min.js')}}"></script>
+<script src="{{url_for('static', filename='logic.js')}}"></script>
+{% endblock %}

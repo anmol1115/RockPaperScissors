@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}Login Page{% endblock %}
+
+{% block body %}
+
+<div id="logindiv">
+    <form action="#" method="post">
+        <span id="logintxt">Login</span>
+        <div id="nameDiv" class="topmargin">
+            <span>Name:</span>
+            <input type="text" name="name">
+        </div>
+        <div id="emailDiv" class="topmargin">
+            <span>Email:</span>
+            <input type="email" name="email">
+        </div>
+        <div id="buttonDiv" class="topmargin">
+            <input type="submit" class="btn" value="Submit">
+            <input type="reset" class="btn" value="Reset">
+        </div>
+    </form>
+</div>
+
+{% endblock %}

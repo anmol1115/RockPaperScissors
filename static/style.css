@@ -1,0 +1,142 @@
+#navbar{
+    display: flex;
+    padding-left: 5px;
+    background-color: #9e48d8;
+    flex-direction: row;
+    height: 35px;
+    border: 1px solid #462171;
+    border-radius: 10px;
+    justify-content: start;
+    align-items: center;
+}
+
+.tile{
+    margin-left: 10px;
+    font-size: larger;
+    font-weight: bold;
+    color: #ffffffe6;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.toright{
+    position: relative;
+    left: 1000px;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    background-color: #e6a2e4;
+    opacity: 0.8;
+    width: 100px;
+    display: none;
+    position: absolute;
+}
+
+.dropdown-content span{
+    text-align: center;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content{display: block;}
+
+.btnmargin{margin-left: 25px;}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#scoreDiv{
+    display: flex;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: space-between;
+    border: 2px solid #9e48d8;
+}
+
+.tag{
+    background-color: rgb(255, 0, 0);
+    color: rgba(255, 255, 255, 0.932);
+    border-radius: 5px;
+}
+
+#playerTag{
+    position: relative;
+    left: -20px;
+    /* width: 40px; */
+    text-align: center;
+}
+
+#compTag{
+    position: relative;
+    right: -20px;
+    /* width: 40px; */
+    text-align: center;
+}
+
+.score{font-size: x-large;}
+
+#userScore{padding-right: 2px;}
+
+#compScore{padding-left: 2px;}
+
+.imageBorder{
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid #9e48d8;
+    border-radius: 50%;
+}
+
+.imageBorder:hover{
+    border: 5px solid #aa7aca;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#logindiv{
+    margin: auto;
+    margin-top: 130px;
+    display: flex;
+    width: 500px;
+    height: 320px;
+    border: 2px solid #9e48d8;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logintxt{
+    position: relative;
+    top: -60px;
+    left: -100px;
+    font-size: xxx-large;
+}
+
+.topmargin{margin-top: 20px;}
+
+#nameDiv{margin-top: 10px;}
+
+.btn{
+    background-color: #9e48d8;
+    color: rgba(255, 255, 255, 0.932);
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #aa7aca;
+}
+
+.infotxt{
+    margin-top: 10px;
+    font-size: larger;
+}
